@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Database Setup Utility</title>
+     <style>
+          body {font-family:AriaL,sans-serif;background-color:#f4f4f4;margin: 0;padding: 0;}
+          .container {width: 600px;margin :50px auto;background: #000;color:white;padding: 20px;border-radius: 5px;}
+          .container h1 {font-size: 20px;margin-bottom: 10px;}
+          .notice {color:red;font-size 14px;margin-bottom: 20px;}
+          .form-group {margin-bottom: 15px;}
+          .form-group label {display:block;font-weight: bold;margin-bottom: 5px;}
+          .form-group input[type="text"],
+          .form-group input[type="password"]{width: 100%;padding: 8px;border: 1px solid #ccc;border-radius: 3px;}
+          .form-group input[type="checkbox"]{margin-left: 10px;}
+          .buttons {margin-top: 20px;}
+          .buttons button {padding:10px;margin-right: 10px;border: none;border-radius:3px;color: white;cursor:pointer;}
+          .install {background: green;}
+          .backup {background: blue;}
+          .restore {background: orange;}
+          .validate {background: #39a6ff;margin-top: 10px;}
+    </style>
+</head>
+<body>
+     <div class="container">
+     <h1>DATABASE SETUP</h1>
+     <p class="notice">- MySQL Server seems to be offline!<br>-Make sure that you entered the correct login information for the MySQL server.</p>
+     <div class="form-group">
+           <label for="server"<MySQL server:</label>
+           <input type="text id="server" value="127.0.0.1">
+     </div>
+     <div class="form-group">
+          <label for="database">MySQL Database:</label>
+          <input type="text" id="database" value="radioj2041">
+    </div>
+    <div class="form-group">
+          <label for="username">MySQL Username:</label>
+          <input type="text" id="username" value="root">
+   </div>
+    <div class="buttons">
+         <button class="install">INSTALL DATABASE</button>
+         <button class="backup">BACKUP DATABASE</button>
+         <button class="restore">RESTORE DATABASE</button>
+    </div>
+</body>
+</html>
